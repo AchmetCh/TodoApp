@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title-todolist">Todo List</h1>
+        <div>
+            <h4 style="color: white;">Timer</h4>
+            <p id="overtime">Time is over</p>
+            <div id="time">
+                <h3 id="min"></h3>
+                <h3>:</h3>
+                <h3 id="sec"></h3>
+               
+            </div>
+            <div>
+                <button id="startBtn" class="btn btn-success">Start</button>
+                <button id="stopBtn" class="btn btn-danger">Stop</button>
+            </div>
+        </div>
+        <br>
+        
+        <div id="input-container">
+            <div id="inpAddBtn">
+                <input type="text" class="form-control" placeholder="Add ToDo" id="inputTask"  autocomplete="off">
+                <button id="addTask" class="btn btn-primary" >Add Task <span id="taskBtn" class="badge text-bg-secondary"> </span></button>
+            </div>
+           
+            <br>
+           
+            <br>
+            <div id="lists">
+                <div>
+                    <div id="lists-container">
+                        <h2>ToDo Items</h2>
+                        <div id="buttons">
+                            <button id="removeLastTask" class="btn btn-danger">Remove last Task</button>
+                            <button id="removeAll" class="btn btn-warning">Remove All Completed</button>
+                        </div>
+                        <ul id="todo-list" class="container-fluid" >
+        
+                        </ul>
+                        <button id="moveToDone" class="btn btn-success">Move Completed To Done</button>
+                    </div>
+                </div>
+           <div>
+            <div id="lists-container-done">
+                <h2>Done Items</h2>
+                <ul id="todo-list-done" class="container-fluid" >
+
+                </ul>
+                <button id="clearAll" class="btn btn-danger">Clear All Done Items</button>
+            </div>
+        </div>
+           </div>
+         
+          
+        </div>
+    </div>
+    <details id="version" class="details-example">
+        <summary>v0.04</summary>
+        <ul style="list-style-type: disc;">
+            <li style="text-decoration: line-through;">Add second list Done items</li>
+            <li style="text-decoration: line-through;">Add Timer</li>
+            <li style="text-decoration: line-through;">Add time to after task name</li>
+            <li style="text-decoration: line-through;">Save to LocalStorage</li>
+            <li>Fix Typing effect</li>
+        </ul>
+    </details>
+</body>
+
+</html>

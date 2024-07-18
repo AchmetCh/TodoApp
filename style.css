@@ -1,0 +1,275 @@
+body {
+  background-image: url(./moon.gif);
+  background-size: cover;
+    /* background-color: rgb(232, 230, 230) !important; */
+    margin-top: 100px !important;
+    
+}
+
+#title-todolist{
+  /* From https://css.glass */
+  color: white;
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+
+}
+.container {
+    text-align: center; 
+    width: 100vw;
+    height: 400px;  
+}
+
+#time{
+ display: flex;
+ justify-content: center;
+ background-color: #dbf6fd; 
+ border: 2px solid #005af6;
+ border-radius: 10px;
+ max-width: 200px;
+ margin: 0 auto; 
+/* From https://css.glass */
+color: white;
+background: rgba(8, 0, 243, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(8, 0, 243, 1);
+
+}
+
+#lists{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.doneLi{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  list-style-type: disc;
+  font-size: 26px;
+}
+.span2:nth-child(odd){
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
+
+#lists-container {
+  color: white;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto; 
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+/* From https://css.glass */
+background: rgba(204, 238, 175, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(193, 241, 150, 1);
+max-height: 400px;
+height: 400px;
+overflow: scroll;
+    margin: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+#lists-container::-webkit-scrollbar{
+  width: 10px;
+}
+
+#lists-container::-webkit-scrollbar-thumb {
+  background-color: rgba(63, 172, 108, 0.497);
+  border-radius: 20px;
+}
+
+#lists-container-done::-webkit-scrollbar{
+  width: 10px;
+}
+#lists-container-done::-webkit-scrollbar-thumb{
+  background-color: rgba(220, 105, 105, 0.497);
+  border-radius: 20px;
+}
+#lists-container-done {
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto; 
+  color: white;
+
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(243, 24, 0, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.4px);
+-webkit-backdrop-filter: blur(6.4px);
+border: 1px solid rgba(243, 24, 0, 1);
+max-height: 400px;
+height: 400px;
+overflow: scroll;
+    margin: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+
+.todoList {
+    font-size: 25px;
+    list-style: none;
+    word-break: break-all;
+    display: grid;
+    grid-template-columns: 30px 1fr 50px 50px;
+    justify-items: start;
+  }
+  #inpAddBtn{
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 30%;
+  }
+ul {
+    
+    border-radius: 10px;
+    width: 50%;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  /* h2:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  } */
+  h2:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  } 
+#buttons{
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#overtime {
+  background-color: red; 
+  font-size: 25px;
+  color: white; 
+  border: 1px black solid;
+  width: 150px;
+  border-radius: 25px; 
+}
+#version {
+  position: fixed;
+  bottom: 10px; 
+  left: 100%;
+  transform: translateX(-90%);
+  background-color: #ccc;
+  padding: 5px 10px; 
+  border-radius: 5px;
+}
+
+.bi:hover{
+  color: red;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: rgb(208, 217, 208) !important;
+    }
+    .todoList {
+        font-size: 18px;
+        list-style: none;
+      }
+      #inputTask {
+        width: 150px;
+    }
+    /* #inpAddBtn{
+        display: grid;
+        grid-template-columns: auto auto auto;
+      } */
+      #inpAddBtn {
+        display: flex;
+        position: relative;
+        width: 70%;
+        left: 10%;
+    }
+      #addTask {
+        width: 100px;
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+      }
+      h2:before {
+        width: 28px;
+        height: 5px;
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        margin-left: -14px;
+        background-color: #02fb38;
+      }
+      h2:after {
+        width: 100px;
+        height: 1px;
+        display: block;
+        content: "";
+        position: relative;
+        margin-top: 25px;
+        left: 50%;
+        margin-left: -50px;
+        background-color: #00e122;
+      }
+      #lists{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+      }
+  }
