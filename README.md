@@ -7,6 +7,7 @@ Add To-Do Items: Easily add new tasks to your to-do list.
 View Done Items: Keep track of tasks that have been completed.
 Timer: Utilize a built-in timer to manage your task time effectively.
 Responsive Design: Accessible and user-friendly on all devices.
+![Weather App Screenshot](screenshot.jpg)
 ## Technologies Used
 - **HTML**: For the structure of the application.
 - **CSS**: For styling the application.
